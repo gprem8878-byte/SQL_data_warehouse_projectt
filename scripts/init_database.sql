@@ -22,7 +22,7 @@ BEGIN
     ALTER DATABASE DataWarehouse SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
     DROP DATABASE DataWarehouse;
 END;
-GO
+GO  -- Separate Batches when working with multiple SQL Statements 
 
 -- Create the 'DataWarehouse' database
 CREATE DATABASE DataWarehouse;
